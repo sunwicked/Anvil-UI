@@ -7,8 +7,39 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: JD
+    properties: {}
+    type: TextArea
+    layout_properties: {grid_position: 'QIJUMO,AAKRKN'}
+    event_bindings: {change: JD_change}
+  - name: button_1
+    properties: {text: JD, align: center}
+    type: Button
+    layout_properties: {grid_position: 'QIJUMO,OIFKTL', full_width_row: false}
+  - name: CV
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'FIXZSR,ACVOHZ'}
+    event_bindings: {pressed_enter: CV_pressed_enter}
+  - name: button_2
+    properties: {text: CV}
+    type: Button
+    layout_properties: {grid_position: 'FIXZSR,KQYGCO'}
+  - name: button_3
+    properties: {text: Calculate}
+    type: Button
+    layout_properties: {grid_position: 'RGBRWZ,PQSCMU'}
+    event_bindings: {click: button_3_click}
+  - name: image_1
+    properties: {}
+    type: Image
+    layout_properties: {grid_position: 'WHBIDQ,TSZTML'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_1
+  properties: {text: JD2CV}
+  type: Label
+  layout_properties: {slot: title}
